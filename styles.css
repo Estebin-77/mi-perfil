@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to right, #2ecc71, #ffffff);
+    color: #2c3e50;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #222;
+    color: #eee;
+}
+
+header {
+    background: #27ae60;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.dark-mode section {
+    background: #333;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    margin: 10px;
+}
+
+.skill i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .toggle-mode {
+        top: 10px;
+        right: 10px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    section {
+        padding: 15px;
+    }
+    .toggle-mode {
+        top: 5px;
+        right: 5px;
+        padding: 6px;
+    }
+}
